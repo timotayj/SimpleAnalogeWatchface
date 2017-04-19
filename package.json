@@ -1,0 +1,21 @@
+{
+    "author": "itstim1234@googlemail.com",
+    "dependencies": {},
+    "keywords": [],
+    "name": "analogwatchface",
+    "pebble": {
+        "displayName": "AnalogWatchface",
+        "enableMultiJS": true,
+        "messageKeys": [],
+        "projectType": "rocky",
+        "resources": {
+            "media": []
+        },
+        "sdkVersion": "3",
+        "uuid": "79d702aa-fdb7-4046-ad54-009250af5d27",
+        "watchapp": {
+            "watchface": false
+        }
+    },
+    "version": "1.0.0"
+}
