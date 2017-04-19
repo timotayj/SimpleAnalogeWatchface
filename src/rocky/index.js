@@ -56,9 +56,26 @@ rocky.on('draw', function(event) {
 
   // Draw the hour hand
   drawHand(ctx, cx, cy, hourAngle, maxLength * 0.6, "lightblue");
+  
+   // Calculate the second hand angle
+  var secondFraction = (d.getSeconds()) / 60;
+  var secondAngle = fractionToRadian(secondFraction);
+
+  // Draw the second hand
+  drawHand(ctx, cx, cy, secondAngle, maxLength, "red");
+  
+  
+  
+  
+  
 });
 
 rocky.on('minutechange', function(event) {
+  // Request the screen to be redrawn on next pass
+  rocky.requestDraw();
+});
+
+rocky.on('secondchange', function(event) {
   // Request the screen to be redrawn on next pass
   rocky.requestDraw();
 });
